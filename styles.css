@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Headings */
+h1, h2 {
+    color: #2c3e50;
+}
+
+/* Navbar */
+nav {
+    background: #2c3e50;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo img {
+    height: 40px; /* Reduced logo size */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f1c40f;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 100px 20px 50px; /* Adjusted padding to prevent navbar overlap */
+    background: #34495e;
+    color: white;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    background: white;
+    margin: 30px auto; /* Added margin for spacing */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+    transition: transform 0.2s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.02); /* Slight scale effect on hover */
+}
+
+/* Facilities Section */
+.facilities ul {
+    list-style: none;
+    padding: 0;
+}
+
+.facilities li {
+    padding: 15px;
+    font-weight: bold;
+    background: #ecf0f1;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.facilities li:hover {
+    background: #d5dbdb;
+}
+
+/* Gallery */
+.gallery .images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+.contact p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* header */
+.header {
+    color: #f1c40f;
+}
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
